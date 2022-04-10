@@ -6,7 +6,6 @@ export default function Friends({arrayOfFriends}) {
         <ul className={s.friendList}>
             {arrayOfFriends.map(friend =>
             {
-                    console.log(friend.isOnline)
                     return <li className={s.item} key={friend.id}>
                         <span className={s.status} style={{ backgroundColor:  friend.isOnline  ? 'green' : 'red' }}>{friend.isOnline}</span>
                     <img className={s.avatar} src={friend.avatar} alt="User avatar" width="48" />
