@@ -13,8 +13,7 @@ export default function Friends({arrayOfFriends}) {
                     <p className={s.name}>{friend.name}</p>
                 </li>
             }
-            )}
-             
+            )}  
         </ul>)
 }
 
