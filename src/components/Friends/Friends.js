@@ -17,6 +17,8 @@ export default function Friends({arrayOfFriends}) {
         </ul>)
 }
 
+
+
 Friends.propTypes = {
  arrayOfItems:  PropTypes.array,
 }
