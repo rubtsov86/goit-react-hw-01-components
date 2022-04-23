@@ -5,11 +5,13 @@ import Friends from "./Friends/Friends";
 import TransactionHistory from "./Transaction/TransactionHistory";
 
 
-import profileData from './Profile/user';
+import ProfileData from './Profile/user';
 import statisticsData from './Statistics/data';
 import friendsList from './Friends/friends.json';
 import transactions from './Transaction/transactions';
 
+
+const { avatar, username, tag, location, stats } = ProfileData;
 
 
 export const App = () => {
@@ -28,11 +30,11 @@ export const App = () => {
     >
 
       <Profile
-        avatar={profileData.avatar}
-        name={profileData.username}
-        tag={profileData.tag}
-        location={profileData.location}
-        stats={profileData.stats}
+        avatar={avatar}
+        name={username}
+        tag={tag}
+        location={location}
+        stats={stats}
         />
         
       <Statistics
