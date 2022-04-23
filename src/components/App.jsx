@@ -32,9 +32,8 @@ export const App = () => {
         name={profileData.username}
         tag={profileData.tag}
         location={profileData.location}
-        followers={profileData.stats.followers}
-        views={profileData.stats.views}
-        likes={profileData.stats.likes} />
+        stats={profileData.stats}
+        />
         
       <Statistics
         arrayOfItems={statisticsData}
@@ -52,3 +51,4 @@ export const App = () => {
 
   );
 };
+
