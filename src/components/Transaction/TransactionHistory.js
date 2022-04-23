@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 export default function TransactionHistory({ arrayOfTransaction }) {
   return (
     <table className={s.transactionHistory}>
-      <thead>
-        <tr>
+      <thead className={s.head}>
+        <tr className={s.head__tr}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
